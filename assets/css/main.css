@@ -3,16 +3,15 @@
 }
 html,
 body{
-    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f5f5f5 !important;
     font-family: 'Lora', serif;
     font-size: 16px;
 }
 .header{
     /* border: 1px solid blueviolet; */
-    background-color: lightblue;
+    background-color: white;
     display: flex;
 }
 .header-logo{
@@ -36,46 +35,115 @@ body{
 
 .navbar{
     background-color: darkblue;
+    box-shadow: 0 4px 10px black;
 }
 .nav-item{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 0 10px;
     text-align: center;
+    color: white;
 }
-.nav-item:hover{
+.nav-item a:hover{
     background-color: blue;
+}
+.nav-item a{
+    color: whitesmoke;
+}
+.navbar-dark .nav-item a:hover{
+    background-color: blue;
+    color: white;
 }
 .nav-link{
     line-height: normal;
-    color: black;
 }
 
 .main-body{
-    background-color: lightblue;
+    background-color: white;
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 20px;
+    /* border: 1px solid black; */
 }
 .carousel{
-    width: 80%;
-    margin: 2% 10%;
+    width: 90%;
+    margin: 0 5% 2%;
 }
 .carousel-item{
-    height: 300px;
+    height: 350px;
+}
+.about-heading{
+    color: rgb(1, 1, 105);
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 3px;
+    transition: background-size .5s ease;
+}
+.about-heading:hover{
+    background-size: 15% 3px;
+}
+.body-boxes{
+    background-color: blue;
+    padding: 10px;
+    color: white;
+    border-right: 1px solid white;
+}
+#preamble{
+    background-color: darkblue;
+}
+.box-info{
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    display: none;
+}
+#preambleinfo{
+    display: block;
 }
 .body-section{
     width: 100%;
 }
 .section-heading{
     text-align: center;
-    color: darkblue;
-    text-decoration: underline;
 }
 
+.contact-heading{
+    color: rgb(1, 1, 105);
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, blue, blue);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 0 3px;
+    transition: background-size .5s ease;
+}
+.contact-heading:hover{
+    background-size: 15% 3px;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+.ccard{
+    width: 30%;
+    box-shadow: 2px 2px 10px black;
+}
+.card-img-top{
+    max-width: 100%;
+    max-height: 200px;
+}
 
 .footer-wrapper{
-    background-color: darkblue;
+    background-color: #06062f;
     color: whitesmoke;
+}
+.footer-col{
+    text-align: center;
 }
 .copyright{
     width: 100%;
@@ -84,4 +152,17 @@ body{
     text-align: center;
     background-color: black;
     color: white;
+}
+@media (max-width: 767.98px){
+    .ccard{
+        width: 45%;
+    }
+}
+@media (max-width: 575.98px) {
+    .ccard{
+        width: 90%;
+    }
+    .card-img-top{
+        width: 75%;
+    }
 }
