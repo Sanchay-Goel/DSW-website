@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+}
+.header{
+    /* border: 1px solid blueviolet; */
+    background-color: lightblue;
+    display: flex;
+}
+.header-logo{
+    /* border: 1px solid blue; */
+    margin: 0;
+    padding: 1%;
+}
+#header-logo-image{
+    width: 100%;
+    height: 100%;
+}
+.header-title-wrapper{
+    margin: 10px;
+}
+.header-title{
+    color: darkblue;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navbar{
+    background-color: darkblue;
+    border: 1px solid red;
+}
+.nav-item{
+    border: 1px solid black;
+    padding: 0 10px;
+    text-align: center;
+}
+.nav-item:hover{
+    background-color: blue;
+}
+.nav-link{
+    line-height: normal;
+    color: black;
+}
+
+.main-body{
+    background-color: lightblue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.carousel{
+    width: 80%;
+    margin: 2% 10%;
+}
+.carousel-item{
+    height: 300px;
+}
+.body-section{
+    width: 100%;
+}
+.section-heading{
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+
+.footer-wrapper{
+    background-color: darkblue;
+    color: whitesmoke;
+}
+.copyright{
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
