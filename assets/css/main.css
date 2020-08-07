@@ -95,6 +95,7 @@ body{
     padding: 10px;
     color: white;
     border-right: 1px solid white;
+    border-top: 1px solid darkblue;
 }
 #preamble{
     background-color: darkblue;
@@ -108,9 +109,6 @@ body{
 }
 #preambleinfo{
     display: block;
-}
-.body-section{
-    width: 100%;
 }
 .section-heading{
     text-align: center;
@@ -184,12 +182,52 @@ body{
     padding: 0;
 }
 
+.hostel-large-view .hostel-boxes{
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+.hostel-large-view .hostel-boxes .hostel-images{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 5%;
+}
+.hostel-large-view .hostel-boxes h2{
+    text-align: center;
+}
+.hostel-large-view .hostel-info{
+    background-color: #f5f5f5;
+}
+.hostel-mobile-view{
+    display: none;
+}
+.hostel-mobile-view .card{
+    margin: 5px;
+}
+.hostel-mobile-view .card .card-header h2{
+    text-align: center;
+}
+.hostel-mobile-view .card .card-img-top{
+    border-radius: 10px;
+}
+
 
 @media (max-width: 767.98px){
     .ccard{
         width: 45%;
     }
+    .hostel-mobile-view{
+        display: block;
+    }
+    .hostel-mobile-view .card .card-img-top{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .hostel-large-view{
+        display: none !important;
+    }
+    
 }
+
 @media (max-width: 575.98px) {
     .ccard{
         width: 90%;
