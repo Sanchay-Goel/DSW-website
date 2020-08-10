@@ -54,9 +54,12 @@ body{
     padding: 0 10px;
     text-align: center;
     color: white;
+    border-radius: 10px;
 }
 .nav-item a:hover{
     background-color: blue;
+    border-radius: 10px;
+    color: white !important;
 }
 .nav-item a{
     color: whitesmoke;
@@ -67,6 +70,10 @@ body{
 }
 .nav-link{
     line-height: normal;
+}
+.navbar-toggler-icon .fa-navicon{
+    color: whitesmoke;
+    font-size: 28px;
 }
 
 .main-body{
@@ -202,8 +209,15 @@ body{
     border-radius: 10px;
     margin-bottom: 10px;
 }
-.updown{
-    transform: scaleY(0);
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+th, td{
+    border: 1px solid black;
+}
+td{
+    word-break: break-all;
 }
 .hostel-mobile-view{
     display: none;
