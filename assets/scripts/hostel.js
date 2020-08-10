@@ -1,3 +1,4 @@
+var previousOpenId = "";
 
 $(function(){
     $('.hostel-large-view .hostel-info').hide();
@@ -5,8 +6,20 @@ $(function(){
 
 $('.hostel-large-view button').click(function(e){
     id = $(this).data("target");
-    id = '.hostel-large-view '+id;
-    $('.hostel-large-view .hostel-info').not(id).hide();
-    // console.log($(id));
-    $(id).toggle()
+    // console.log(previousOpenId);
+    if(previousOpenId!=="" && previousOpenId!==id)
+    {
+        $(previousOpenId).animate({
+            height: 'hide'
+        });
+    }
+    // console.log($(id).height());
+    if($(id).height()>0 && id!=previousOpenId)
+        previousOpenId = id;
+    else
+        previousOpenId = "";
+    $(id).animate({
+        height: 'toggle'
+    });
+    // console.log(previousOpenId);
 });

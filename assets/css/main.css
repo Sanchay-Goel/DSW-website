@@ -187,8 +187,9 @@ body{
     /* border: 1px solid black; */
 }
 .hostel-large-view .hostel-boxes .hostel-images{
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
     border-radius: 5%;
 }
 .hostel-large-view .hostel-boxes h2{
@@ -201,6 +202,9 @@ body{
     border-radius: 10px;
     margin-bottom: 10px;
 }
+.updown{
+    transform: scaleY(0);
+}
 .hostel-mobile-view{
     display: none;
 }
@@ -212,6 +216,7 @@ body{
 }
 .hostel-mobile-view .card .card-img-top{
     border-radius: 10px;
+    height: 150px;
 }
 
 
@@ -223,8 +228,8 @@ body{
         display: block;
     }
     .hostel-mobile-view .card .card-img-top{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
     }
     .hostel-large-view{
         display: none !important;
