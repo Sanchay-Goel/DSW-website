@@ -232,6 +232,13 @@ td{
     border-radius: 10px;
     height: 150px;
 }
+.hostel-mobile-view .list-group .list-group-item{
+    background-color: #f9f9f9;
+}
+.hostel-mobile-view .warden-list{
+    list-style: none;
+    padding: 15px;
+}
 
 
 @media (max-width: 767.98px){
