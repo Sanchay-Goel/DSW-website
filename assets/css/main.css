@@ -266,6 +266,17 @@ td{
     padding: 15px;
 }
 
+.scholarships-wrapper .list-group-item{
+    background-color: #f5f5f5;
+    border: 1px solid #cacaca;
+}
+.scholarships-wrapper .list-group-item:hover{
+    background-color: #e5e5e5;
+}
+.scholarships-wrapper .scholarship-details{
+    list-style: none;
+}
+
 
 @media (max-width: 767.98px){
     .ccard{
