@@ -206,6 +206,10 @@ body{
     border: 1px solid #888;
     box-shadow: 2px 4px 6px #555;
     margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+.page-wrapper .activity-section:hover{
+    transform: scale(1.02);
 }
 .page-wrapper .activity-section:nth-child(odd){
     flex-direction: row-reverse;
@@ -231,6 +235,16 @@ body{
 .page-wrapper .activity-section .activity-content-link{
     text-align: right;
     padding-top: 5px;
+}
+
+.page-wrapper .info-links-wrapper{
+    list-style: disclosure-closed;
+}
+.page-wrapper .info-links-wrapper .info-links{
+    margin: 5px;
+}
+.page-wrapper .info-links-wrapper .info-links a{
+    color: darkblue;
 }
 
 .hostel-large-view .hostel-boxes{
