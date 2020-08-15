@@ -87,6 +87,10 @@ body{
     width: 90%;
     margin: 0 5% 2%;
 }
+.carousel-inner{
+    box-shadow: 0 0 5px #81bce3;
+    border: 1px solid rgba(0,0,0,0.4);
+}
 .carousel-item{
     height: 350px;
 }
@@ -247,6 +251,9 @@ body{
     color: darkblue;
 }
 
+.hec-link{
+    margin: 25px auto;
+}
 .hostel-large-view .hostel-boxes{
     padding: 10px;
     /* border: 1px solid black; */
@@ -277,9 +284,6 @@ table{
 }
 th, td{
     border: 1px solid black;
-}
-td{
-    word-break: break-all;
 }
 .hostel-mobile-view{
     display: none;
