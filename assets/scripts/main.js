@@ -1,5 +1,8 @@
 
 var activeBox = "#preamble";
+$(function(){
+  $(activeBox).css("background-color", "darkblue");
+});
 
 $(".body-boxes").hover(function(){
     $(this).css("background-color", "darkblue");
