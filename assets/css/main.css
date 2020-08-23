@@ -356,6 +356,36 @@ table{
     list-style: none;
 }
 
+.achievement-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.achievement-wrapper .achieve{
+    margin: 0px;
+    padding: 10px;
+}
+.achievement-wrapper .achieve-bg{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 300px;
+    width: 100%;
+}
+.achieve .achieve-content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    margin: 10px;
+    transition: padding-bottom 0.2s;
+}
+.achieve .achieve-content:hover{
+    padding-bottom: 15px;
+}
+.achieve .achieve-content h3{
+    text-align: center;
+}
+
 
 @media (max-width: 767.98px){
     #header-logo-image{
